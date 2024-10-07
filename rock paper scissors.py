@@ -19,6 +19,7 @@ def choice_selection(choice):
                 count += 1
     else:
         count = 4
+
     return count
 
 def int_to_choice(value):
@@ -51,14 +52,19 @@ def winner(first_selection, second_selection):
         '''
         if (first_selection == 0) and (second_selection == 2):
             winner = "bot wins"
+
         elif (second_selection == 0) and (first_selection == 2):
             winner = "You win"
+
         elif first_selection > second_selection:
             winner = "bot wins"
+
         elif second_selection > first_selection:
             winner = 'You win'
+
         else:
             winner = 'tie'
+            
         return winner
 
 def main():
