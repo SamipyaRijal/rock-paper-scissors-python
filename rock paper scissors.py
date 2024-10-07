@@ -64,14 +64,14 @@ def winner(first_selection, second_selection):
 
         else:
             winner = 'tie'
-            
+
         return winner
 
 def main():
     user_choice = '0'
     while user_choice != 'end':
         comp_choice = random.randint(0,2)
-        user_choice = choice_selection(input('\nType your choice or \'end\' to finish playing:').strip().lower())
+        user_choice = choice_selection(input('\nType your choice or type \'end\' to finish playing:').strip().lower())
 
         if user_choice == 4:
             invaild_selection()
